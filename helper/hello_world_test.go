@@ -8,6 +8,18 @@ import (
 	"testing"
 )
 
+func TestSubTest(t *testing.T) {
+	t.Run("Nur", func(t *testing.T) {
+		result := HelloWorld("Nur")
+		require.Equal(t, "Hello Nur", result, "Result must be 'Hello Nur'")
+	})
+
+	t.Run("Ady", func(t *testing.T) {
+		result := HelloWorld("Ady")
+		require.Equal(t, "Hi Ady", result, "Result must be 'Hello Ady'")
+	})
+}
+
 func TestMain(m *testing.M) {
 	//before unit test
 	fmt.Println("BEFORE UNIT TEST")
