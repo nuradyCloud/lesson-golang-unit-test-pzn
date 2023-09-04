@@ -8,6 +8,16 @@ import (
 	"testing"
 )
 
+func TestMain(m *testing.M) {
+	//before unit test
+	fmt.Println("BEFORE UNIT TEST")
+
+	m.Run()
+	//after unit test
+	fmt.Println("AFTER UNIT TEST")
+
+}
+
 func TestSkip(t *testing.T) {
 	if runtime.GOOS == "darwin" {
 		t.Skip("Cant run on Mac OS")
@@ -27,7 +37,7 @@ func TestHelloWorldRequire(t *testing.T) {
 	result := HelloWorld("Nur")
 
 	require.Equal(t, "Hello Nur", result, "Result must be 'Hello Nur'")
-	fmt.Println("Test Hello world with assert is done")
+	fmt.Println("Test Hello world with require is done")
 }
 
 func TestHelloWorldNur(t *testing.T) {
