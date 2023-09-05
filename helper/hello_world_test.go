@@ -8,6 +8,31 @@ import (
 	"testing"
 )
 
+func BenchmarkSub(b *testing.B) {
+	b.Run("Ady", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			HelloWorld("Ady")
+		}
+	})
+	b.Run("Nur Ady", func(b *testing.B) {
+		for i := 0; i < b.N; i++ {
+			HelloWorld("Nur Ady")
+		}
+	})
+}
+
+func BenchmarkHelloWorld(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		HelloWorld("Ady")
+	}
+}
+
+func BenchmarkHelloWorldName(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		HelloWorld("Nur Ady")
+	}
+}
+
 func TestTableHelloWorld(t *testing.T) {
 	tests := []struct {
 		name     string
