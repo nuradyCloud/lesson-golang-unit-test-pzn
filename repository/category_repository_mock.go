@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/lesson-golang-unit-test-pzn/entity"
+	"github.com/nuradyCloud/lesson-golang-unit-test-pzn/entity"
 	"github.com/stretchr/testify/mock"
 )
 

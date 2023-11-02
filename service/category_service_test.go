@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/lesson-golang-unit-test-pzn/entity"
-	"github.com/lesson-golang-unit-test-pzn/repository"
+	"github.com/nuradyCloud/lesson-golang-unit-test-pzn/entity"
+	"github.com/nuradyCloud/lesson-golang-unit-test-pzn/repository"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"testing"

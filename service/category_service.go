@@ -2,8 +2,8 @@ package service
 
 import (
 	"errors"
-	"github.com/lesson-golang-unit-test-pzn/entity"
-	"github.com/lesson-golang-unit-test-pzn/repository"
+	"github.com/nuradyCloud/lesson-golang-unit-test-pzn/entity"
+	"github.com/nuradyCloud/lesson-golang-unit-test-pzn/repository"
 )
 
 type CategoryService struct {
